@@ -8,6 +8,6 @@ import java.util.*
 data class Book(
     @Id
     val id: String = UUID.randomUUID().toString(),
-    val goodReadsId: String,
+    val goodReadsId: Int,
     val spotifyIds: List<String>
 )

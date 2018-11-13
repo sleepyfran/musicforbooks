@@ -7,6 +7,6 @@ import java.util.*
 
 @Repository
 interface BookRepository : MongoRepository<Book, String> {
-    fun findByGoodReadsId(bookId: String): Optional<Book>
+    fun findByGoodReadsId(bookId: Int): Optional<Book>
     fun findBySpotifyIds(spotifyId: String): List<Book>
 }

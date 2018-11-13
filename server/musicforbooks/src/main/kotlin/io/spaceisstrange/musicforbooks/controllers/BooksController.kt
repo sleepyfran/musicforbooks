@@ -19,7 +19,7 @@ class BooksController {
 
     @GetMapping("/{id}")
     @ResponseBody
-    fun getBookByGoodReadsId(@PathVariable id: String): Book {
+    fun getBookByGoodReadsId(@PathVariable id: Int): Book {
         return bookRepository
             .findByGoodReadsId(id)
             .orElseThrow { BookNotFoundException() }
