@@ -14,7 +14,12 @@ class DefaultBookService : BookService {
         return bookRepository
             .findByGoodReadsId(book.goodReadsId)
             .map {
-                val modifiedBook = Book(it.id, it.goodReadsId, book.spotifyIds)
+                val updatedSongs = it
+                    .spotifyIds
+                    .plus(book.spotifyIds)
+                    .distinct()
+
+                val modifiedBook = Book(it.id, it.goodReadsId, updatedSongs)
                 bookRepository.save(modifiedBook)
             }
             .orElseGet {

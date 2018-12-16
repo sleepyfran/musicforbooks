@@ -25,15 +25,17 @@ class BooksController {
             .orElseThrow { BookNotFoundException() }
     }
 
-    @PostMapping("/")
+    @PostMapping("/{id}")
     @ResponseBody
-    fun createBook(@RequestBody book: Book): Book {
+    fun createBook(@RequestBody songs: List<String>, @PathVariable id: Int): Book {
+        val book = Book(goodReadsId = id, spotifyIds = songs)
         return bookService.createOrUpdateBook(book)
     }
 
     @PutMapping("/{id}")
     @ResponseBody
-    fun updateBook(@RequestBody book: Book, @PathVariable id: String): Book {
+    fun updateBook(@RequestBody songs: List<String>, @PathVariable id: Int): Book {
+        val book = Book(goodReadsId = id, spotifyIds = songs)
         return bookService.createOrUpdateBook(book)
     }
 }
