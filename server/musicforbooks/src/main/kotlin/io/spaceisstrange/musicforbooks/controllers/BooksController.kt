@@ -3,7 +3,7 @@ package io.spaceisstrange.musicforbooks.controllers
 import io.spaceisstrange.musicforbooks.data.BookRepository
 import io.spaceisstrange.musicforbooks.exceptions.BookNotFoundException
 import io.spaceisstrange.musicforbooks.model.Book
-import io.spaceisstrange.musicforbooks.services.BookService
+import io.spaceisstrange.musicforbooks.services.interfaces.BookService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.*
