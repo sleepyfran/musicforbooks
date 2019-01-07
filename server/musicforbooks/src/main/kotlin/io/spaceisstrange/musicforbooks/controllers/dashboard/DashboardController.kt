@@ -71,7 +71,7 @@ class DashboardController {
                 "Julia Kelly",
                 "The Light Over London",
                 38532224,
-                "hhttps://images.gr-assets.com/books/1545495005l/38532224.jpg"
+                "https://images.gr-assets.com/books/1545495005l/38532224.jpg"
             )
         )
     }
