@@ -14,34 +14,64 @@ class DashboardController {
     fun getDashboardBooks(): List<DashboardBookResponse> {
         return listOf(
             DashboardBookResponse(
-                "Haruki Murakami",
-                "Killing Commendatore",
-                38820047,
-                "https://images.gr-assets.com/books/1527854255m/38820047.jpg"
+                "Holly Black",
+                "The Wicked King (The Folk of the Air, #2)",
+                26032887,
+                "https://images.gr-assets.com/books/1520620414l/26032887.jpg"
             ),
             DashboardBookResponse(
-                "John Grisham",
-                "The Reckoning",
-                38389488,
-                "https://images.gr-assets.com/books/1524516474m/39072220.jpg"
+                "Leigh Bardugo",
+                "King of Scars",
+                36307634,
+                "https://images.gr-assets.com/books/1525110825l/36307634.jpg"
             ),
             DashboardBookResponse(
-                "Becky Albertalli",
-                "What If It's Us",
-                36341204,
-                "https://images.gr-assets.com/books/1526557760m/36341204.jpg"
+                "Greer Hendricks",
+                "An Anonymous Girl",
+                39863515,
+                "https://images.gr-assets.com/books/1524442757l/39863515.jpg"
             ),
             DashboardBookResponse(
-                "Kiese Laymon",
-                "Heavy: An American Memoir",
-                29430746,
-                "https://images.gr-assets.com/books/1517524042m/29430746.jpg"
+                "Roshani Chokshi",
+                "The Gilded Wolves",
+                39863498,
+                "https://images.gr-assets.com/books/1525714353l/39863498.jpg"
             ),
             DashboardBookResponse(
-                "Susan Orlean",
-                "The Library Book",
-                39507318,
-                "https://images.gr-assets.com/books/1524238338m/39507318.jpg"
+                "Katherine Arden",
+                "The Winter of the Witch",
+                36621586,
+                "https://images.gr-assets.com/books/1517001188l/36621586.jpg"
+            ),
+            DashboardBookResponse(
+                "Sonja Yoerg",
+                "True Places",
+                39904267,
+                "https://images.gr-assets.com/books/1532295349l/39904267.jpg"
+            ),
+            DashboardBookResponse(
+                "Sally Thorne",
+                "99 Percent Mine",
+                36300625,
+                "https://images.gr-assets.com/books/1532485978l/36300625.jpg"
+            ),
+            DashboardBookResponse(
+                "Karen M. McManus",
+                "Two Can Keep a Secret",
+                38225791,
+                "https://images.gr-assets.com/books/1531316524l/38225791.jpg"
+            ),
+            DashboardBookResponse(
+                "Karen Thompson Walker",
+                "The Dreamers",
+                34409176,
+                "https://images.gr-assets.com/books/1533916399l/34409176.jpg"
+            ),
+            DashboardBookResponse(
+                "Julia Kelly",
+                "The Light Over London",
+                38532224,
+                "hhttps://images.gr-assets.com/books/1545495005l/38532224.jpg"
             )
         )
     }
